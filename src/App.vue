@@ -1,12 +1,23 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <navbar />
     </div>
+    <Home />
     <router-view />
   </div>
 </template>
+
+<script>
+import navbar from "@/components/layout/navbar.vue";
+import Home from "@/components/Home.vue";
+export default {
+  components: {
+    navbar,
+    Home
+  }
+};
+</script>
 
 <style>
 #app {
@@ -26,6 +37,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #6b5d6a;
 }
 </style>

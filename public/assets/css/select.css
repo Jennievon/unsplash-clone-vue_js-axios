@@ -1,0 +1,130 @@
+.v-select .vs__search::placeholder,
+.v-select .vs__dropdown-toggle,
+.v-select .vs__dropdown-menu {
+  background: white;
+  border: 1px solid #cdd5df;
+  color: rgba(73, 84, 99, 0.7);
+  /* text-transform: lowercase; */
+}
+
+select {
+  height: 52px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .table-responsive {
+    overflow-x: unset;
+  }
+
+}
+
+.v-select .vs__search::placeholder {
+  border: none;
+}
+
+.v-select .vs__clear,
+.v-select .vs__open-indicator {
+  fill: #394066;
+}
+
+.vs__selected-options {
+  align-items: center;
+}
+.v-select .vs__dropdown-toggle {
+  line-height: 24px;
+  padding: 12px 15px;
+}
+
+.v-select .vs__dropdown-menu li {
+  border-radius: 4px;
+  height: 30px;
+}
+
+.v-select .vs__dropdown-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.v-select .vs__dropdown-menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.v-select .vs__dropdown-menu::-webkit-scrollbar-thumb {
+  background: #394066;
+  border-radius: 10px;
+}
+
+.v-select .vs__dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Datatable */
+.v-table .row .col-md-12 {
+  display: flex;
+}
+.v-table.VueTables.VueTables--client .VueTables__search {
+  width: 100% !important;
+}
+.VueTables__search-field {
+  display: flex !important;
+}
+.v-table.VueTables.VueTables--client .VueTables__limit {
+  width: 13% !important;
+}
+.VueTables__limit-field {
+  display: flex !important;
+  margin-left: -30px;
+}
+.VueTables__limit-field label {
+  display: flex !important;
+  margin-right: 10px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: none !important;
+}
+
+.sidebar-nav li {
+  padding: 5px 20px;
+}
+
+/* for switches */
+.input-switch:checked ~ label:before {
+  background: #28a745;
+}
+
+.upload-icon {
+  margin-right: 5px;
+}
+
+.image-upload canvas {
+  padding: 5px;
+  border: 2px dotted black;
+}
+
+.user-photo img {
+  height: 100%;
+}
+.gray {
+  background-color: gray;
+  filter: grayscale(1);
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
+  background: linear-gradient(to bottom, #ff8a00, #da1b60);
+  border-radius: 30px;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
+}
